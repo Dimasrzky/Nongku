@@ -62,6 +62,7 @@ dev_dependencies:
   flutter_lints: ^6.0.0
   rename: ^3.1.0
   flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.4.1
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -74,6 +75,7 @@ flutter:
   uses-material-design: true
   assets:
     - .env
+    - assets/icon/Logo_fix.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:
@@ -108,9 +110,16 @@ flutter:
 flutter_launcher_icons:
   android: true
   ios: true
-  image_path: "assets/icon/Logo_fix.png"
+  image_path: "assets/icon/logo_fix.png"
   adaptive_icon_background: "#FFFFFF" # Warna background (opsional)
-  adaptive_icon_foreground: "assets/icon/Logo_fix.png" # Icon foreground
+  adaptive_icon_foreground: "assets/icon/logo_fix.png" # Icon foreground
 
 dependency_overrides:
   shared_preferences_android: ^2.2.1
+
+flutter_native_splash:
+  color: "#340A0D"
+  image: assets/icon/logo_fix.png
+  android: true
+  ios: true
+  fullscreen: true
