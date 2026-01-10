@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../services/auth.dart';
-import '../home.dart';
+import '../main_wrapper.dart';
 import 'register.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -39,7 +39,7 @@ class _LoginScreenState extends State<LoginScreen> {
         if (response.user != null) {
           Navigator.pushReplacement(
             context,
-            MaterialPageRoute(builder: (context) => const HomeScreen()),
+            MaterialPageRoute(builder: (context) => const MainWrapper()),
           );
         }
       }
