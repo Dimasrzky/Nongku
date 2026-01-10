@@ -39,8 +39,8 @@ app.*.symbols
 # Obfuscation related
 app.*.map.json
 
-/android
 # Android Studio will place build artifacts here
+/android
 /android/app/
 /android/app/debug
 /android/app/profile
@@ -49,5 +49,7 @@ app.*.map.json
 /android/build/
 /android/.gradle/
 /android/.kotlin/
+/android/app/.cxx/
+/android/local.properties
 
 .env
