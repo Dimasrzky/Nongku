@@ -59,17 +59,17 @@ class _HomeScreenState extends State<HomeScreen> {
                       // Card Saldo/Dompet
                       _buildWalletCard(),
 
-                      const SizedBox(height: 24),
+                      const SizedBox(height: 20),
 
                       // Quick Access
                       _buildQuickAccess(),
 
-                      const SizedBox(height: 24),
+                      const SizedBox(height: 20),
 
                       // Statistik User
                       _buildUserStats(),
 
-                      const SizedBox(height: 24),
+                      const SizedBox(height: 20),
 
                       // Rekomendasi Cafe Hits
                       _buildRecommendedCafes(),
@@ -338,15 +338,15 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
         ),
-        const SizedBox(height: 16),
+        const SizedBox(height: 2),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20),
           child: GridView.count(
             crossAxisCount: 4,
             shrinkWrap: true,
             physics: const NeverScrollableScrollPhysics(),
-            mainAxisSpacing: 16,
-            crossAxisSpacing: 16,
+            mainAxisSpacing: 8,
+            crossAxisSpacing: 8,
             childAspectRatio: 0.85,
             children: [
               _buildQuickAccessItem(
@@ -453,7 +453,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
         ),
-        const SizedBox(height: 16),
+        const SizedBox(height: 20),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20),
           child: Row(
