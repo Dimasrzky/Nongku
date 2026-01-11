@@ -338,16 +338,16 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
         ),
-        const SizedBox(height: 2),
+        const SizedBox(),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20),
           child: GridView.count(
             crossAxisCount: 4,
             shrinkWrap: true,
             physics: const NeverScrollableScrollPhysics(),
-            mainAxisSpacing: 8,
-            crossAxisSpacing: 8,
-            childAspectRatio: 0.85,
+            mainAxisSpacing: 2,
+            crossAxisSpacing: 2,
+            childAspectRatio: 1,
             children: [
               _buildQuickAccessItem(
                 icon: Icons.search_rounded,
