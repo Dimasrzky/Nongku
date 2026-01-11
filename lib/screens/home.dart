@@ -54,7 +54,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const SizedBox(height: 20),
+                      const SizedBox(height: 16),
 
                       // Card Saldo/Dompet
                       _buildWalletCard(),
@@ -64,7 +64,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       // Quick Access
                       _buildQuickAccess(),
 
-                      const SizedBox(height: 20),
+                      const SizedBox(height: 4),
 
                       // Statistik User
                       _buildUserStats(),
@@ -338,7 +338,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
         ),
-        const SizedBox(),
+        const SizedBox(height: 12),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20),
           child: GridView.count(
@@ -453,7 +453,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
         ),
-        const SizedBox(height: 20),
+        const SizedBox(height: 12),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20),
           child: Row(
